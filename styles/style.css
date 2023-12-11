@@ -236,7 +236,7 @@ menu a:active {
     justify-content: center;
     margin-top: 25px;
     list-style-type: none;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; собъется макет, но было бы полезно*/
 
 }
 
