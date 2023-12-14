@@ -15,7 +15,7 @@
   <header class="header grid">
     <div class="menu">
       <ul class="header__links-list">
-        <li class="header__links-list-item"><a href="#">главная</a></li>
+        <li class="header__links-list-item"><a class="header__link_active" href="#">главная</a></li>
         <li class="header__links-list-item"><a href="#">посмотреть лоты</a></li>
         <li class="header__links-list-item"><a href="#">об аукционе</a></li>
       </ul>
@@ -23,50 +23,60 @@
     <a class="logo box" href="#">
       <img class="logo-img" src="images/logo-black.svg" alt="оно тебе надо" width="100" height="80">
     </a>
-    <div class="address header__address box raleway-normal">
+    <div class="address header__address box">
       <ul>
-        <li class="header__links-list-item underline">+9 999 555 5555</li>
-        <li class="header__links-list-item underline">info@sobaka.ge</li>
+        <li class="header__links-list-item">
+          <a class="underline" href="tel:+99995555555">+9 999 555 5555</a>
+        </li>
+        <li class="header__links-list-item">
+          <a class="underline" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        </li>
         <li>наб. Принсенграхт 263-265, Амстердам</li>
       </ul>
     </div>
   </header>
   <main>
-    <section class="grid relative">
-      <div class="overlay"></div>
-      <div class="jambotron lotus-background cover">
-        <span class="full-width flex-align-start uppercase jumbotron__title">о
-          <span class="letter-spacing-60px">но</span></span>
-        <span class="full-width flex-align-center uppercase jumbotron__title">те<span
-            class="letter-spacing-60px">бе</span></span>
-        <span class="full-width flex-align-end uppercase jumbotron__title"><span
-            class="letter-spacing-60px">н</span><span>ад</span><span class="letter-spacing-0px">о</span>
+    <section class="jambotron grid relative">
+      <div class="jambotron__window lotus-background cover">
+        <div class="overlay"></div>
+        <span class="jambotron__window__title full-width flex-align-start uppercase">
+          <span>о</span>
+          <span class="letter-spacing-extended">но</span>
         </span>
-        <div class="flex-align-end jumbotron__bottom-section">
-          <span class="raleway-normal jumbotron-subtitle z-index-front">аукцион вещей, в которые никто не верил</span>
-          <button class="jumbotron-button z-index-front" type="submit">сделать ставку</button>
+        <span class="jambotron__window__title full-width flex-align-center uppercase">
+          <span>те</span>
+          <span class="letter-spacing-extended">бе</span>
+        </span>
+        <span class="jambotron__window__title full-width flex-align-end uppercase">
+          <span class="letter-spacing-extended">н</span>
+          <span>ад</span>
+          <span class="no-letter-spacing">о</span>
+        </span>
+        <div class="jambotron__window__bottom-section flex-align-end">
+          <span class="jambotron__window__bottom-section__subtitle raleway-normal z-index-front">аукцион вещей, в которые никто не верил</span>
+          <button class="jambotron__window__bottom-section__button z-index-front" type="submit">сделать ставку</button>
         </div>
       </div>
     </section>
     <section class="lots">
       <h2 class="lots__heading heading">Лоты</h2>
       <ul class="lots__card-list">
-        <li class="lots__card-list-item lot-one-img">
+        <li class="lots__card-list-item card_type_film">
           <a class="lots__card-link " href="#">
             <article class="lots__card-link__card">
-              <h2 class="lots__card-link__card__title">Фильм режиссёра, который бросил киношколу</h2>
-              <p class="lots__card-link__card__text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+              <h2 class="lots__card-link__card-title">Фильм режиссёра, который бросил киношколу</h2>
+              <p class="lots__card-link__card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                 ставка, если бы вы не
                 знали, что режиссёр — Пол Томас Андерсон?</p>
             </article>
           </a>
         </li>
-        <li class="lots__card-list-item lot-two-img">
+        <li class="lots__card-list-item card_type_book">
           <a class="lots__card-link " href="">
             <article class="lots__card-link__card">
-              <h3 class="lots__card-link__card__title">Книга, где описан один скучный день из жизни рекламного агента
+              <h3 class="lots__card-link__card-title">Книга, где описан один скучный день из жизни рекламного агента
               </h3>
-              <p class="lots__card-link__card__text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
+              <p class="lots__card-link__card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
                 переходами на
                 древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная
                 с
@@ -75,11 +85,11 @@
             </article>
           </a>
         </li>
-        <li class="lots__card-list-item lot-three-img">
+        <li class="lots__card-list-item card_type_picture">
           <a class="lots__card-link " href="">
             <article class="lots__card-link__card">
-              <h2 class="lots__card-link__card__title">Картина, которую повторит даже 5-летний сын маминой подруги</h2>
-              <p class="lots__card-link__card__text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
+              <h2 class="lots__card-link__card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h2>
+              <p class="lots__card-link__card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
                 похожее на
                 инфузорию-туфельку. Никаких полей, лесов, котиков… Сколько бы вы на такое поставили, если бы не знали,
                 что
@@ -112,8 +122,12 @@
   <footer class="footer grid">
     <div class="address footer__address">
       <ul>
-        <li class="header__links-list-item underline">+9 999 555 5555</li>
-        <li class="header__links-list-item underline">info@sobaka.ge</li>
+        <li class="header__links-list-item underline">
+          <a class="underline" href="tel:+99995555555">+9 999 555 5555</a>
+        </li>
+        <li class="header__links-list-item underline">
+          <a class="underline" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        </li>
         <li>наб. Принсенграхт 263-265, Амстердам</li>
       </ul>
     </div>
@@ -134,11 +148,11 @@
     </div>
     <ul class="footer__social-list">
       <li class="footer__social-list-item"><a href="#" class="footer__social-link"><img src="images/yt.svg"
-            class="footer__social-icon"></img></a></li>
+            class="footer__social-icon" alt="youtube.com"></a></li>
       <li class="footer__social-list-item"><a href="#" class="footer__social-link"><img src="images/vk.svg"
-            class="footer__social-icon"></img></a></li>
+            class="footer__social-icon" alt="vk.com"></a></li>
       <li class="footer__social-list-item"><a href="#" class="footer__social-link"><img src="images/pinterest.svg"
-            class="footer__social-icon"></img></a></li>
+            class="footer__social-icon" alt="pinterest.com"></a></li>
     </ul>
   </footer>
 </body>
