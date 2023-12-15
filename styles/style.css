@@ -200,15 +200,16 @@
 
 .lots__card-list {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 27px;
     list-style-type: none;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 .lots__card-list-item {
-    min-width: 430px;
+    width: 430px;
     min-height: 450px;
-    margin: 0px 12px 0px 12px;
     padding: 50px 40px 50px 40px;
     background-size: cover;
     background-position: center;
