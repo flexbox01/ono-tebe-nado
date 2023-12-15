@@ -13,22 +13,22 @@
 
 <body>
   <header class="header grid">
-    <div class="menu">
-      <ul class="header__links-list">
-        <li class="header__links-list-item"><a class="header__link_active" href="#">главная</a></li>
-        <li class="header__links-list-item"><a href="#">посмотреть лоты</a></li>
-        <li class="header__links-list-item"><a href="#">об аукционе</a></li>
+    <nav class="menu">
+      <ul class="menu__links-list">
+        <li class="menu__links-list-item"><a class="header__link_active" href="#">главная</a></li>
+        <li class="menu__links-list-item"><a href="#">посмотреть лоты</a></li>
+        <li class="menu__links-list-item"><a href="#">об аукционе</a></li>
       </ul>
-    </div>
+    </nav>
     <a class="logo box" href="#">
       <img class="logo-img" src="images/logo-black.svg" alt="оно тебе надо" width="100" height="80">
     </a>
     <div class="address header__address box">
       <ul>
-        <li class="header__links-list-item">
+        <li class="address__links-list-item">
           <a class="underline" href="tel:+99995555555">+9 999 555 5555</a>
         </li>
-        <li class="header__links-list-item">
+        <li class="address__links-list-item">
           <a class="underline" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         </li>
         <li>наб. Принсенграхт 263-265, Амстердам</li>
@@ -53,7 +53,7 @@
           <span class="no-letter-spacing">о</span>
         </span>
         <div class="jambotron__window__bottom-section flex-align-end">
-          <span class="jambotron__window__bottom-section__subtitle raleway-normal z-index-front">аукцион вещей, в которые никто не верил</span>
+          <span class="jambotron__window__bottom-section__subtitle z-index-front">аукцион вещей, в которые никто не верил</span>
           <button class="jambotron__window__bottom-section__button z-index-front" type="submit">сделать ставку</button>
         </div>
       </div>
@@ -61,21 +61,22 @@
     <section class="lots">
       <h2 class="lots__heading heading">Лоты</h2>
       <ul class="lots__card-list">
-        <li class="lots__card-list-item card_type_film">
-          <a class="lots__card-link " href="#">
+        <li class="lots__card-list-item card_type_film relative">
+          <div class="overlay"></div>
+          <a class="lots__card-link" href="#">
             <article class="lots__card-link__card">
-              <h2 class="lots__card-link__card-title">Фильм режиссёра, который бросил киношколу</h2>
+              <h3 class="lots__card-link__card-title">Фильм режиссёра, который бросил киношколу</h3>
               <p class="lots__card-link__card-text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                 ставка, если бы вы не
                 знали, что режиссёр — Пол Томас Андерсон?</p>
             </article>
           </a>
         </li>
-        <li class="lots__card-list-item card_type_book">
+        <li class="lots__card-list-item card_type_book relative">
+          <div class="overlay"></div>
           <a class="lots__card-link " href="">
             <article class="lots__card-link__card">
-              <h3 class="lots__card-link__card-title">Книга, где описан один скучный день из жизни рекламного агента
-              </h3>
+              <h3 class="lots__card-link__card-title">Книга, где описан один скучный день из жизни рекламного агента</h3>
               <p class="lots__card-link__card-text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
                 переходами на
                 древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная
@@ -85,10 +86,11 @@
             </article>
           </a>
         </li>
-        <li class="lots__card-list-item card_type_picture">
+        <li class="lots__card-list-item card_type_picture relative">
+          <div class="overlay"></div>
           <a class="lots__card-link " href="">
             <article class="lots__card-link__card">
-              <h2 class="lots__card-link__card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h2>
+              <h3 class="lots__card-link__card-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
               <p class="lots__card-link__card-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
                 похожее на
                 инфузорию-туфельку. Никаких полей, лесов, котиков… Сколько бы вы на такое поставили, если бы не знали,
@@ -122,30 +124,28 @@
   <footer class="footer grid">
     <div class="address footer__address">
       <ul>
-        <li class="header__links-list-item underline">
+        <li class="address__links-list-item underline">
           <a class="underline" href="tel:+99995555555">+9 999 555 5555</a>
         </li>
-        <li class="header__links-list-item underline">
+        <li class="address__links-list-item underline">
           <a class="underline" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         </li>
         <li>наб. Принсенграхт 263-265, Амстердам</li>
       </ul>
     </div>
-    <div class="footer__menu">
-      <nav>
-        <ul class="footer__menu-list">
-          <li class="footer__menu-list-item">
-            <a href="" class="footer__menu-link footer__menu-link_active">главная</a>
-          </li>
-          <li class="footer__menu-list-item">
-            <a href="" class="footer__menu-link">посмотреть лоты</a>
-          </li>
-          <li class="footer__menu-list-item">
-            <a href="" class="footer__menu-link">об аукционе</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="footer__menu">
+      <ul class="footer__menu-list">
+        <li class="footer__menu-list-item">
+          <a href="" class="footer__menu-link footer__menu-link_active">главная</a>
+        </li>
+        <li class="footer__menu-list-item">
+          <a href="" class="footer__menu-link">посмотреть лоты</a>
+        </li>
+        <li class="footer__menu-list-item">
+          <a href="" class="footer__menu-link">об аукционе</a>
+        </li>
+      </ul>
+    </nav>
     <ul class="footer__social-list">
       <li class="footer__social-list-item"><a href="#" class="footer__social-link"><img src="images/yt.svg"
             class="footer__social-icon" alt="youtube.com"></a></li>
